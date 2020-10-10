@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DCDCDC;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:"Roboto", sans-serif;
+
+}
+header {
+    position: fixed;
+    background-color: black;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.left-area h3 {
+    color:#DCDCDC;
+    margin:0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+    
+}
+.left-area span {
+color: #DDA0DD;
+}
+.sidebar {
+    background-color: black;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+
+}
+.sidebar .profile_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+
+}
+.sidebar h4 {
+    color:#DCDCDC;
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+
+}
+.sidebar a {
+    color: #DCDCDC;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property:all;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.sidebar a:hover{
+    background: #DDA0DD;
+}
+.sidebar i {
+    padding-right: 10px;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+    padding-top: 10px;
+}
+
+label #sidebar_btn:hover {
+    color: #DDA0DD;
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span {
+    display: none;
+}
+
+#check:checked ~.sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+
+h1 {
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 20px;
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    background: url(Images/6.jpg) no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    transition: 0.5s;
+    background-position: center;
+    margin-left: 150px;
+    
+}
+#check:checked ~ h1 {
+    margin-left: 60px;
+}
+
+.move {
+    margin-bottom: 40px;
+}
+
+
+h4 {
+    padding-left: 20px;
+    display: none;
+}
+
+@keyframes h1 {
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+}
+ 
+h5 {
+    font-size: 20px;
+    color:#DDA0DD
+}
+.flex {
+    margin-top: 650px;
+    margin-left: 450px;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.bottom_para{
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+
+}
+.para {
+    width: 100%;
+    -webkit-align-self: center;
+    
+    
+    
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.8em;
+    letter-spacing: .18px;
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    color: #DCDCDC;
+    font-weight: 200;
+    margin-left: 1100px;
+    text-align:left;
+    margin-top: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+
+    
+    
+}
+.head2 {
+    width: 100%;
+    height: 1100px;
+    margin-left: 500;
+    margin-top: 50px;
+    background-color:#7c009c;
+}
+.infos__text {
+    margin-left: 630px;
+    margin-top: 100px;
+    color:#DDA0DD;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+
+    
+}
+
+.s-m {
+    margin-bottom: 90px;
+    margin-left: 500px;
+    position: absolute;
+    
+}
+.s-m a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: black;
+    color: #DCDCDC;
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+.s-m a:hover{
+background: #DDA0DD;
+}
+.s-m a i {
+    transition: 0.4s all;
+}
+.s-m a:hover > i {
+    transform: scale(1.6) rotate(30deg);
+    
+}
+@media screen 
+(max-device-width: 400px)
+-webkit-min-device-pixel-ratio: 1) { 
+}
+footer {
+    margin-top: 250px;
+    margin-left: 100px;
+    color: #DDA0DD;
+
+}

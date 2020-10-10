@@ -1,0 +1,200 @@
+body {
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DCDCDC;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:"Roboto", sans-serif;
+
+}
+header {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.left-area h3 {
+    color:#DCDCDC;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+
+    
+}
+.left-area span {
+color: #DDA0DD;
+}
+.sidebar {
+    background-color: black;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+
+}
+.sidebar .profile_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+
+}
+.sidebar h4 {
+    color:#DCDCDC;
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+
+}
+.sidebar a {
+    color: #DCDCDC;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property:all;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.sidebar a:hover{
+    background: #DDA0DD;
+}
+.sidebar i {
+    padding-right: 10px;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+    padding-top: 10px;
+}
+
+label #sidebar_btn:hover {
+    color: #DDA0DD;
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span {
+    display: none;
+}
+
+#check:checked ~.sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+#check:checked {
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.move {
+    margin-bottom: 40px;
+}
+
+
+
+.about_image img{
+    width: 300px;
+    height: 250px;
+    margin-top: 190px;
+    margin-left: 400px;
+
+
+}
+.text_uppercase{
+    margin-right: 400px;
+    margin-top: 150px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #7c009c;
+    font:bold
+    
+    
+}
+.par {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    color:black;
+}
+.button {
+    color: #7c009c;
+    
+}
+img .img_fluid {
+    padding-left: 100px;
+}
+.services-area{
+    margin-top: 100px;
+    margin-left: 300px;
+    color: #7c009c;
+}
+.services-area .services {
+    background-color: rgba(248, 252, 253, 0.973);
+    margin:5rem 0.5rem;
+    transition : box-shadow 0.7s ease
+}
+.services{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+.project-title {
+    margin-left: 400px;
+}
+.project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--'Josefin Sans', sans-serif);
+    text-transform:uppercase;
+
+}
+.project-area .button-group button+button{
+    padding-left:3rem
+}
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    box-shadow: none !important;
+
+}
+button{
+    color: #DDA0DD;
+}
+.title-h1{
+    font:normal bold 39px/40px var(----'Josefin Sans', sans-serif))
+}
+
